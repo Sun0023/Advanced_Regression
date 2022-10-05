@@ -19,10 +19,50 @@ You are required to model the price of houses with the available independent var
 
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+
+Results comparison
+
+Comparing the results of both Ridge and Lasso:
+
+**Ridge Regression:**
+
+R2 score Train: 84.8 percent
+R2 score Test: 79.7 Percent
+RSS for Train data: 1.798
+RSS for Test data: 0.962
+MSE for Train data: 0.0018
+MSE for Test data: 0.0023
+
+**Lasso Regression:**
+
+R2 score Train: 84.7 percent
+R2 score Test: 80.3 Percent
+RSS for Train data: 1.811
+RSS for Test data: 0.933
+MSE for Train data: 0.0018
+MSE for Test data: 0.0022
+
+**Optimal Alpha Values**
+
+Alpha = 1.0 in Ridge
+Alpha = 0.0001 in Lasso
+Conclusion Comments
+
+Except R2 score value, the rest of the values are almost the same. The R2 scores are better in the Lasso Regression.
+
+Since the Lasso Regression fares better than the Ridge Regression, let's consider the features from the Lasso. The top ten features that best explain the target variabl are:
+
+1. The basement quality (BsmtQual)
+2. The overall quality of house (OverallQual)
+3. The exterior quality (ExterQual)
+4. The lot shape (LotShape)
+5. The level of the house (Lvl). That is the land contour will play the role.
+6. CulDSac. Lot configuration plays a role in the sale price.
+7. FR3. That is lot configuration with frontage on 3 side of the property plays a role.
+8. GarageAge
+9. Overall condition
+10. RRAn. That is the conditions like North-South rail road play a role.
+
 
 
 
