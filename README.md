@@ -20,9 +20,7 @@ You are required to model the price of houses with the available independent var
 
 ## Conclusions
 
-Results comparison
-
-Comparing the results of both Ridge and Lasso:
+Comparing the results of both Ridge and Lasso.
 
 **Ridge Regression:**
 
